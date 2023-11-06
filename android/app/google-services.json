@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "977515783976",
+    "firebase_url": "https://loginflutter-6577c-default-rtdb.firebaseio.com",
+    "project_id": "loginflutter-6577c",
+    "storage_bucket": "loginflutter-6577c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977515783976:android:1ca9475768efb4d78b921d",
+        "android_client_info": {
+          "package_name": "com.example.firestroreconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHmyKUuAp4hkF6Ob6l6aZsusIDlm9mooc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
