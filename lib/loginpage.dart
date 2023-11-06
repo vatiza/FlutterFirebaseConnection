@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +13,11 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController userEmail = TextEditingController();
   TextEditingController userPhone = TextEditingController();
 
-  Future getData() async {
-    var firestore = FirebaseFirestore.instance;
-    QuerySnapshot qs = await firestore.collection('user').get();
-    return qs.docs;
-  }
+  // Future getData() async {
+  //   var firestore = FirebaseFirestore.instance;
+  //   QuerySnapshot qs = await firestore.collection('user').get();
+  //   return qs.docs;
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +80,8 @@ class _LoginPageState extends State<LoginPage> {
                     'Email': userEmail.text,
                     'Phone': userPhone.text,
                   });
-                  SnackBar(content: Text('Add Succesfully'));
+
+                  const SnackBar(content: Text('Add Successfully'));
                 },
                 child: const Text('Submit'),
               ),
