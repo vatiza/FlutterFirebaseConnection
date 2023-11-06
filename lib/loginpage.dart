@@ -19,6 +19,26 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                'User Form',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: TextField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      labelText: 'Name'),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
               TextFormField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -35,13 +55,11 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10.0)),
                     labelText: 'Phone'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               ElevatedButton(
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 child: const Text('Submit'),
               ),
             ],
